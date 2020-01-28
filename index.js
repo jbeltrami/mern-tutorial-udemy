@@ -1,8 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const keys = require('./config/keys');
-require('./services/passport'); // No need to assign to a variable, since nothing is exported on the source file.
+// Require models before where they're being used. Mongoose cares about the order of the includes
 require('./models/User');
+// No need to assign to a variable, since nothing is exported on the source file.
+require('./services/passport');
 
 mongoose.connect(keys.mongoURI);
 

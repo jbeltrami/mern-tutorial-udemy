@@ -1,4 +1,4 @@
-Create a file labeled `keys.js` and within it, export and object with the following key/value pairs:
+Create a file labeled `keys.js` and within it, export an object with the following key/value pairs:
 
 ```
   {
